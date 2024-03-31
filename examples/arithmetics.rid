@@ -1,0 +1,41 @@
+section Start:
+    write msg 1
+
+    ;; Addition
+    move 36 temp
+    add 40 temp
+    write msg1 1
+    write temp 0
+    write newline 0
+
+    ;; Subtraction
+    move 128 temp
+    sub 28 temp
+    write msg2 1
+    write temp 0
+    write newline 0
+
+    ;; Multiplication
+    move 25 temp
+    mul 5 temp
+    write msg3 1
+    write temp 0
+    write newline 0
+
+    ;; Division
+    move 99 temp
+    div 3 temp
+    write msg4 1
+    write temp 0
+    write newline 0
+end Start
+
+section Data:
+    msg = "Results will be printed as ascii chars" 10 0
+    temp var 1
+    msg1 = "36 + 40  = " 0
+    msg2 = "128 - 28 = " 0
+    msg3 = "25 * 5   = " 0
+    msg4 = "99 / 3   = " 0
+    newline = 10
+end Data

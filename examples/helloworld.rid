@@ -1,0 +1,16 @@
+;; Entry point
+section Start:
+    write hello 1
+    move 1 code
+    add 6 code
+    write msg 1
+    exit code
+end Start
+
+;; Data definitions
+section Data:
+;; Strings must be null-terminated
+    hello = "Hello, World!" 10 0
+    msg = "Exiting with code 7" 10 0
+    code var 1
+end Data
